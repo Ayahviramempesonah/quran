@@ -7,6 +7,7 @@ export default function Home() {
 
   const puter = data.map(gas =>
     <li key={data.id}>
+      <p> {gas.number}</p>
      <p className="text" style={{ fontFamily: "var(--font-geist-abi)", fontWeight:  900 }}> {gas.text}</p>
        <p>{gas.translation_id}</p>
     </li>
