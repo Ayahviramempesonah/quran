@@ -12,6 +12,7 @@
 
 html,
 body {
+  font-family: var(--font-geist-ab);
   max-width: 100vw;
   overflow-x: hidden;
 }
@@ -19,7 +20,9 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-abi);
+  /* font-family: Arial, Helvetica, sans-serif;
+   */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -28,6 +31,8 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  color:green;
+  /* font-family: Regular 400 Italic ; */
 }
 
 a {
@@ -39,4 +44,33 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.text{
+  text-align: right;
+  padding:10px;
+  font-size:5vw;
+}
+@font-face {
+  font-family: 'Amiri';
+  src: url('/fonts/Amiri-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: BoldItalic;
+}
+
+body {
+  font-family: 'Amiri', serif;
+}
+
+@font-face {
+  font-family: 'Amiri';
+  src: url('/fonts/Amiri-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+.italic-bold {
+  font-family: 'Amiri', serif;
+  font-weight: 700;
+  font-style: italic;
 }
